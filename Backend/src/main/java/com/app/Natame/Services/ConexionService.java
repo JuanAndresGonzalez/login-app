@@ -1,10 +1,11 @@
-package login.LoginApplication.Services;
+package com.app.Natame.Services;
 
 import java.sql.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import login.LoginApplication.Logica.Conexion;
+
+import com.app.Natame.Logica.Conexion;
 
 public class ConexionService {
     private static ConexionService servicio;
@@ -19,6 +20,10 @@ public class ConexionService {
         return servicio;
     }
 
+    int numPedido;
+    Date fecha_pedido = new Date(System.currentTimeMillis());
+    int id_cliente;
+
     public Map<String, Object> iniciarSesion(String user, String pass) {
         try {
             new Conexion(user, pass).EjecutarQuery("select * from dual");
@@ -28,4 +33,5 @@ public class ConexionService {
             throw e;
         }
     }
+
 }
