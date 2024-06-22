@@ -25,5 +25,4 @@ public class UserController {
             return ResponseEntity.badRequest().body(Map.of("message", e.getCause().getMessage(), "codigo", 400));
         }
     }
-    // awaw
 }
