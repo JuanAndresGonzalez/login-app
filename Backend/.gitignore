@@ -33,7 +33,6 @@ build/
 .vscode/
 script_seguridad.sql
 Cliente.java
-Conexion.java
 ClienteController.java
 application.properties
 ClienteController.java
