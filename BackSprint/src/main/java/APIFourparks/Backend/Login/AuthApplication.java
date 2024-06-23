@@ -1,13 +1,13 @@
-package com.app.Natame;
+package APIFourparks.Backend.Login;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class NatameApplication {
+public class AuthApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(NatameApplication.class, args);
+		SpringApplication.run(AuthApplication.class, args);
 	}
 
 }

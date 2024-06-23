@@ -9,11 +9,11 @@ function App() {
     const handleLogin = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:8080/iniciar', {
+            const response = await axios.post('http://localhost:8080/login', {
                 user: username,
-                pass: password
+                password: password
             });
-            console.log(response.data);
+            console.log(response.data.mensaje);
         } catch (error) {
             console.error('There was an error!', error);
         }
